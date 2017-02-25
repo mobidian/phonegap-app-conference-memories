@@ -27,7 +27,6 @@
   "dependencies": {
     "eslint-config-airbnb-base": "^11.0.1",
     "eslint-plugin-import": "^2.2.0",
-    "font-awesome": "^4.7.0",
     "framework7": "^1.5.3",
     "framework7-vue": "^0.8.0",
     "vue": "^2.1.0",
