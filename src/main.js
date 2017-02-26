@@ -1,4 +1,4 @@
-/* global window document f7 */
+/* global window document f7 cordova StatusBar */
 
 import 'whatwg-fetch';
 
@@ -66,6 +66,12 @@ new Vue({ // eslint-disable-line no-new
 
 // Ye olde Device Ready
 document.addEventListener('deviceready', () => {
+  // setup status bar color
+  if (cordova.platformId == 'android') {
+    // dark blue
+    StatusBar.backgroundColorByHexString('#3381c1');
+  }
+
   // Bind to the back button for Android
   document.addEventListener('backbutton', () => {
     f7.mainView.router.back();
